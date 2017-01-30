@@ -59,6 +59,7 @@ RUN set -x \
 	&& tar -xvf tomcat.tar.gz --strip-components=1 \
 	&& rm bin/*.bat \
 	&& rm tomcat.tar.gz* \
+	&& rm -rf /usr/local/tomcat/webapps/* \
 	\
 	&& nativeBuildDir="$(mktemp -d)" \
 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 \
