@@ -96,7 +96,6 @@ public class EventDemos {
 	public static void fireWeb1() {
 		System.out.println("fire web 1");
 		String catalina_home = System.getenv("CATALINA_HOME");
-		System.out.println(catalina_home);
 		String filepath = catalina_home + "/webapps/ROOT/samples/malwaresample1.exe";
 		long epoch = System.currentTimeMillis();
 		long timestamp = epoch / 1000;
@@ -114,8 +113,8 @@ public class EventDemos {
 	
 	public static void fireWeb2() {
 		System.out.println("fire web 2");
-
-		String filepath = "webapps/ROOT/samples/malwaresample2.exe";
+		String catalina_home = System.getenv("CATALINA_HOME");
+		String filepath = catalina_home + "/webapps/ROOT/samples/malwaresample2.exe";
 		long epoch = System.currentTimeMillis();
 		long timestamp = epoch / 1000;
 		String data = String.valueOf(timestamp);
@@ -132,8 +131,8 @@ public class EventDemos {
 	
 	public static void fireWeb3() {
 		System.out.println("fire web 3");
-
-		String filepath = "webapps/ROOT/samples/malwaresample3.exe";
+		String catalina_home = System.getenv("CATALINA_HOME");
+		String filepath = catalina_home + "/webapps/ROOT/samples/malwaresample3.exe";
 		long epoch = System.currentTimeMillis();
 		long timestamp = epoch / 1000;
 		String data = String.valueOf(timestamp);
@@ -150,8 +149,8 @@ public class EventDemos {
 	
 	public static void fireWeb4() {
 		System.out.println("fire web 4");
-
-		String filepath = "webapps/ROOT/samples/malwaresample4.exe";
+		String catalina_home = System.getenv("CATALINA_HOME");
+		String filepath = catalina_home + "/webapps/ROOT/samples/malwaresample4.exe";
 		long epoch = System.currentTimeMillis();
 		long timestamp = epoch / 1000;
 		String data = String.valueOf(timestamp);
