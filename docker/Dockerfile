@@ -99,5 +99,5 @@ RUN set -e \
 
 ADD https://github.com/mikedgibson/sampleserver/raw/master/build/sampleserver.war $CATALINA_HOME/webapps/ROOT.war
 
-EXPOSE 80
+EXPOSE 8080
 CMD ["catalina.sh", "run"]
