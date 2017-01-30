@@ -95,8 +95,9 @@ public class EventDemos {
 	
 	public static void fireWeb1() {
 		System.out.println("fire web 1");
-
-		String filepath = "webapps/ROOT/samples/malwaresample1.exe";
+		String catalina_home = System.getenv("CATALINA_HOME");
+		System.out.println(catalina_home);
+		String filepath = catalina_home + "/webapps/ROOT/samples/malwaresample1.exe";
 		long epoch = System.currentTimeMillis();
 		long timestamp = epoch / 1000;
 		String data = String.valueOf(timestamp);

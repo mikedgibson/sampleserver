@@ -60,6 +60,9 @@ RUN set -x \
 	&& rm bin/*.bat \
 	&& rm tomcat.tar.gz* \
 	&& rm -rf /usr/local/tomcat/webapps/* \
+	&& sed -i -r 's/<\/tomcat-users>//' ${CATALINA_HOME}/conf/tomcat-users.xml \
+	&& echo "<user username=\"admin\" password=\"admin\" roles=\"protected\"/>" >> ${CATALINA_HOME}/conf/tomcat-users.xml \
+	&& echo '</tomcat-users>' >> ${CATALINA_HOME}/conf/tomcat-users.xml
 	\
 	&& nativeBuildDir="$(mktemp -d)" \
 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 \
