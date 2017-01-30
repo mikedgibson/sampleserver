@@ -1,0 +1,254 @@
+@charset "utf-8";
+#status_bar_container {
+	margin: 0;
+	padding:0 25px;
+	height:34px;
+	position:absolute;
+	z-index:1000;
+	bottom: 0;
+}
+#status_bar_container ul {
+	padding: 0;
+	margin: 0;
+	list-style:none;
+	list-style-image: none;
+}
+#status_bar_container #status_bar.sb_left {
+	float:left;
+	left:24px;	
+}
+#status_bar_container #status_bar {
+	background:url(images/bottom_status_bg_left.png) bottom left no-repeat;	
+	position:fixed;
+	clear:both;
+	right:24px;	
+	bottom:0;
+  height:34px;
+	padding-left:8px;
+	text-align:right;
+	float:right;
+	font-size:11px;
+	color:#FFF;
+}
+#status_bar_container #status_bar .status_bar_body {
+	background:url(images/bottom_status_bg_right.png) bottom right no-repeat;
+	height:34px;
+	padding-right:8px;
+	position:relative;
+}
+#status_bar_container #status_bar .status_bar_content {
+	background:url(images/bottom_status_bg.png) bottom repeat-x;
+	height:34px;
+	display:block;
+}
+#status_bar_container #status_bar .status_bar_content .status_bar_item {
+	background:url(images/bottom_status_option_line.png) left 2px no-repeat;
+	height:29px;
+	text-align:center;
+	margin-top:5px;
+	padding: 0 20px;
+	float:right;
+}
+#status_bar_container #status_bar .status_bar_content .status_bar_item span {
+	color:#FFF;	
+	cursor:pointer;
+	text-decoration:none;
+	line-height:29px;
+	font-weight:bold;
+}
+#status_bar_container #status_bar .status_bar_content .status_bar_item.status_bar_copyright {
+	background: none;
+}
+#status_bar_container #status_bar .status_bar_content .status_bar_item.status_bar_copyright span {
+	color: #AAA;
+	cursor: default;
+	font-weight: normal;
+}
+#status_bar_container #status_bar .status_bar_content .status_bar_item_selected {
+	background-color: #ddd;
+}
+#status_bar_container #status_bar .status_bar_content .status_bar_item_selected span {
+	color: #000;
+}
+
+#status_bar_container #status_bar .status_bar_content #status_bar_main_content {
+	float: left;
+}
+#status_bar_container #status_bar .status_bar_content #status_bar_main_content span.status_head {
+	display:block;
+	line-height:29px;
+	margin: 5px;
+	text-align:left;
+	float:left;
+}
+#status_bar_container #status_bar .status_bar_content #status_bar_main_content #status_bar_logo {
+	display:block;
+	background: transparent url(images/tball.png) no-repeat scroll 0 0;
+	margin: 12px 4px 0;
+	width: 20px;
+	height: 20px;
+	float:left;
+	line-height: 29px;
+}
+#status_bar_container.close_width #status_bar .status_bar_content #status_bar_main_content {
+	width: 30px;
+}
+#status_bar_container.close_width #status_bar.sb_left .status_bar_content .status_bar_close {
+	background: url(images/arrow_right.png) no-repeat scroll left 10px transparent;
+}
+#status_bar_container.close_width #status_bar .status_bar_content .status_bar_close {
+	background: url(images/arrow_left.png) no-repeat scroll right 10px transparent;
+}
+#status_bar_container #status_bar.sb_left .status_bar_content .status_bar_close {
+	background:url(images/arrow_left.png) no-repeat left 10px;	
+	float:left;
+	border-right:1px #FFF solid;	
+	border-left:0;	
+}
+#status_bar_container #status_bar .status_bar_content .status_bar_close {
+	width:16px;
+	height:29px;
+	margin-top:5px;
+	background:url(images/arrow_right.png) no-repeat right 10px;	
+	color:#FFF;
+	text-align:center;
+	line-height:22px;
+	float:right;
+	cursor:pointer;
+	border-left:1px #FFF solid;	
+	border-right:0;	
+}
+
+#status_bar_container #status_bar .status_bar_content .status_bar_item .status_bar_popup_content {
+	position: absolute;
+	display: none;
+	clear: both;
+	padding: 10px 20px 10px 10px;
+	background:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#ddd));
+	background: -moz-linear-gradient(top,  #FFF,  #ddd);
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr="#FFFFFF", endColorStr="#dddddd", gradientType="0");
+	border-top: 1px #666 solid;
+	border-right: 1px #666 solid;
+	border-left: 1px #666 solid;
+	-moz-border-radius: 7px; /*Firefox */
+	-moz-border-radius-bottomleft: 0px; /*Firefox */
+	-moz-border-radius-bottomright: 0px; /*Firefox */
+    -webkit-border-radius: 7px; /*Webkit  */
+	-webkit-border-bottom-left-radius: 0px; /*Webkit */
+	-webkit-border-bottom-right-radius: 0px; /*Webkit */
+	-moz-box-shadow:2px -2px 4px rgba(60, 60, 60, 0.6);
+	-webkit-box-shadow:2px -2px 4px rgba(60, 60, 60, 0.6);
+	overflow:hidden;
+	margin-left:-2px;
+	text-align:left;
+	color: #555;
+}
+#status_bar_container #status_bar .status_bar_content .status_bar_item .status_bar_popup_content .title {
+	font-weight: bold;
+	border-bottom: 1px solid #999;
+	padding-bottom: 5px;
+	color: #000;
+	font-size: 12px;
+}
+#status_bar_container #status_bar .status_bar_content .status_bar_item .status_bar_popup_content ul li a {
+	color: #0066CC ;
+	text-decoration: auto ;
+	text-decoration: underline ;
+	font-weight: bold;
+	line-height: 16px;
+}
+#status_bar_container #status_bar .status_bar_content .status_bar_item .status_bar_popup_content ul li a:hover {
+	color: #ff0000;
+}
+#status_bar_container #status_bar .status_bar_content .status_bar_item .status_bar_popup_content ul li {
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	font: Arial 11px normal #000000;
+	line-height: 16px;
+}
+
+#status_bar_container #status_bar .icon_arrow_up {
+	background: transparent url('images/arrow_up.png') no-repeat scroll center right;
+	padding-right: 15px;
+}
+#status_bar_container #status_bar .icon_arrow_left {
+	background: transparent url('images/arrow_left.png') no-repeat scroll center right;
+	padding-right: 15px;
+}
+#status_bar_container #status_bar .icon_arrow_right {
+	background: transparent url('images/arrow_right.png') no-repeat scroll center right;
+	padding-right: 15px;
+}
+#status_bar_container #status_bar .icon_arrow_down {
+	background: transparent url('images/arrow_down.png') no-repeat scroll center right;
+	padding-right: 15px;
+}
+#status_bar_container #status_bar #sb_tasks .sb_task {
+	float: left;
+	width: 200px;
+	border: 1px solid #AAA;
+	-moz-box-shadow: 1px 1px #333;
+	-webkit-box-shadow: 1px 1px #333;
+	box-shadow: 1px 1px #333;
+	text-align: left;
+	padding: 2px;
+	margin-right: 5px;
+	color: white;
+	text-decoration: none;
+	height: 16px;
+	min-width: 34px;
+	max-width: 200px;
+}
+#status_bar_container #status_bar #sb_tasks .sb_task .sb_task_close {
+	float: right;
+	padding: 2px;
+	color: white;
+	line-height: 10px;
+	text-decoration:none;
+}
+#status_bar_container #status_bar #sb_tasks {
+  float: left;
+  height: 22px;
+  margin-top: 8px;
+  padding: 0 5px;
+  text-align: center;	
+  width: 80%;
+  overflow: hidden;
+}
+#status_bar_container #status_bar #sb_tasks .sb_task:hover {
+	background-color: #555;
+}
+#status_bar_container #status_bar #sb_tasks .sb_task .sb_text {
+	background: transparent url(images/loader_processing_1.gif) no-repeat scroll 0 0;
+	padding: 0 2px 2px 20px;
+	cursor: pointer;
+  float: left;
+  overflow: hidden;
+  height: 16px;
+  white-space: nowrap;
+}
+#status_bar_container #status_bar #sb_alerts {
+	float: right;
+	padding-top: 5px;
+}
+#status_bar_container #status_bar #sb_alerts .sb_alert .sb_alert_status {
+	width: 10px;
+	height: 10px;
+	border: 1px solid white;
+	background-color: green;
+	float: left;
+	margin: 4px;
+}
+#status_bar_container #status_bar #sb_alerts .sb_alerts_title {
+	font-weight: bold;
+	float: left;
+	line-height: 18px;
+	cursor: default;
+}
+#status_bar_container #status_bar #sb_alerts .sb_alert {
+	float: left;
+	margin-left: 5px;
+	cursor: pointer;
+}

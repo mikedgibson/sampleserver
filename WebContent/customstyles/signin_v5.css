@@ -1,0 +1,129 @@
+/*!
+Copyright (C) 2012 Trend Micro Inc. All rights reserved.
+*/
+
+*, td, p {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+a.menu:after, 
+.dropdown-toggle:after {
+	margin-top:10px;
+    border-top: 4px solid #000;
+}
+.menu-dropdown, .dropdown-menu {
+	top: 20px;
+	right: 0;
+}
+.open .menu, .dropdown.open .menu, .open .dropdown-toggle, .dropdown.open .dropdown-toggle {
+    background: transparent;
+    color: #0069D6;
+}
+.topbar .dropdown-menu a, .dropdown-menu a {
+	color: black;
+}
+
+
+/* HEADER */
+#tm_header {
+	padding: 5px 20px;
+	background-color: white;
+}
+
+.tm_logo {
+    display: block;
+    height: 35px;
+    width: 320px;
+}
+
+#tm_header #tm_header_links {
+    font-size: 12px;
+    font-weight: normal;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+	margin: 0;
+}
+#tm_header #tm_header_links a {
+	outline: 0;
+}
+#tm_header #tm_header_links > li {
+    border-left: 1px solid #D6E2F0;
+    display: inline;
+    line-height: 24px;
+    padding: 0 4px 0 8px;
+}
+#tm_header #tm_header_links > li:first-child {
+    border-left: none;
+}
+
+#login_body,
+#login_body #tm_header {
+	background-color: #E4E4E2;
+}
+#login_form_container {
+    margin: 100px auto 0;
+	text-align: center;
+    width: 430px;
+}
+#login_form #login_tm_logo_container {
+	border-bottom: 2px solid #CC0000;
+	padding: 10px 30px;;
+	margin-bottom: 20px;
+}
+#login_form {
+	background-color: white;
+	border: 1px #b7b7b7 solid;
+	border-radius: 5px;
+	margin: 0;
+}
+#login_form_footer_container {
+	border-top: 1px #DDD solid;
+	border-left: 1px #DDD solid;
+	border-right: 1px #DDD solid;
+	border-radius: 5px 5px 0 0;
+	height: 17px; 
+	margin-bottom: 15px;
+	overflow:hidden;
+}
+#login_form_footer {
+	color: #666;
+	border-radius: 5px 5px 0 0;
+	margin: 0;
+	padding: 8px;
+	background: white;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F8F8F8', endColorstr='#E4E4E2');
+	background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#E4E4E2));
+	background: -moz-linear-gradient(top,  #F8F8F8,  #E4E4E2);
+	background: -o-linear-gradient(top, #F8F8F8 0%,#E4E4E2 100%);
+	background: -ms-linear-gradient(top, #F8F8F8 0%,#E4E4E2 100%);
+	background: linear-gradient(top, #F8F8F8 0%,#E4E4E2 100%);
+}
+
+.alert-message{
+	margin-bottom:18px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+/* rounded div to contain the login info message box */
+.login_infoMsg_rounded {
+	border-radius: 4px;
+	margin-bottom: 18px;
+	overflow: hidden;
+}
+.login_infoMsg {
+	border-radius: 4px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #339bb9 #339bb9 #22697d;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	background-color: #339BB9;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37a8c8', endColorstr='#339BB9',GradientType=0 );
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#37a8c8), color-stop(100%,#339BB9));
+	background-image: -moz-linear-gradient(top, #37a8c8 0%, #339BB9 100%);
+	background-image: -o-linear-gradient(top, #37a8c8 0%,#339BB9 100%);
+	background-image: -ms-linear-gradient(top, #37a8c8 0%,#339BB9 100%);
+	background-image: linear-gradient(top, #37a8c8 0%,#339BB9 100%);
+	padding: 7px 15px;
+	color: white;
+}

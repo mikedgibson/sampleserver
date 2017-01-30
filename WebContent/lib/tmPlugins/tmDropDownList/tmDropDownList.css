@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+ol.drop_down_menu {	
+	clear:both;
+	background:#FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#ddd));
+	background: -moz-linear-gradient(top,  #FFF,  #ddd);
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr="#FFFFFF", endColorStr="#dddddd", gradientType="0");
+	border:1px #666 solid;
+	-moz-border-radius: 7px; /*Firefox */
+    -webkit-border-radius   : 7px; /*Webkit  */
+	-moz-border-radius-topleft: 0px; /*Firefox */
+	-moz-border-radius-topright: 0px; /*Firefox */
+	-webkit-border-top-left-radius: 0px; /*Webkit */
+	-webkit-border-top-right-radius: 0px; /*Webkit */
+	-moz-box-shadow:2px 2px 4px rgba(60, 60, 60, 0.6);
+	-webkit-box-shadow:2px 2px 4px rgba(60, 60, 60, 0.6);
+	overflow:hidden;
+	display:none;
+	text-align:left;
+	padding: 0;
+	margin: 0;
+}
+ol.drop_down_menu li {
+	color: #000;
+	list-style:none;
+	list-style-image: none;
+	cursor:default;	
+	margin-top:-1px;
+	min-height:24px;	
+	padding: 0px 15px;
+	text-align:left;
+	font-weight:normal;
+}
+ol.drop_down_menu li span{
+	line-height:24px;
+	white-space:nowrap;
+	height:24px;
+	font-size:11px;
+}
+ol.drop_down_menu li.radius {
+	-moz-border-radius: 6px; /*Firefox */    
+	-moz-border-radius-topleft: 0px; /*Firefox */
+	-moz-border-radius-topright: 0px; /*Firefox */
+	-webkit-border-radius   : 6px; /*Webkit  */
+	-webkit-border-top-left-radius: 0px; /*Webkit */
+	-webkit-border-top-right-radius: 0px; /*Webkit */
+}
+ol.drop_down_menu li.list_hover{
+	cursor:pointer;
+	background:#cce0f5;
+}
+ol.drop_down_menu li.have_child{
+	border-top:1px #CCC solid;
+	border-bottom:1px #CCC solid;
+	padding: 0px;	
+}
+ol.drop_down_menu li.have_child .category {	
+	font-weight:bold;	
+	margin-left:15px;
+}
+ol.drop_down_menu li.have_child.last_list{
+	border-bottom:none;
+}
+ol.drop_down_menu li.have_list{
+	background:url(images/list_arrow_unselected.gif) no-repeat 5px 8px;
+	padding: 0px;
+	cursor:pointer;
+}
+ol.drop_down_menu li.cate_selected{
+	background:url(images/list_arrow_selected.gif) no-repeat 5px 8px;
+}
+ol.drop_down_menu li.have_list span.category{
+	font-weight:normal;
+	margin-left:15px;
+	padding-right:5px;
+}
+ol.drop_down_menu li ol.sub_list {
+	padding: 0;
+	margin: 0;;
+}
+ol.drop_down_menu li.have_list ol.sub_list li{
+	padding-left:25px;
+	padding-right:5px;
+}
